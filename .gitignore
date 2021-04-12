@@ -1,0 +1,21 @@
+#Ignore all trash files
+
+#NOTACTIVATED - Ignore Librairies
+#*.a
+
+#Ignore executable
+*.elf
+
+#ignore object file
+*.o
+
+#Ignore Link file
+*.d
+
+#$(DescriptionQueJeConnaisPas)
+*.elf.map
+*.hex
+*.map
+
+#Ignore les nohup.out
+nohup.out

@@ -30,6 +30,7 @@ void partie1(){
 
     //option c
     string nomPersonne;
+    
     while(!estDChoisie){
         cout << "\n(a) Créer le graphe d’exposition.\n(b) Afficher le graphe d’exposition.\n(c) Afficher notification COVID\n(d) Quitter\n";
         cout << "Entree l'option voulue ( a, b, c, d) : ", cin >> valeurEntree;
