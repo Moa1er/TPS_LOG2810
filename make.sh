@@ -1,2 +1,3 @@
-make > /dev/null
+make clean
+make
 ./programme

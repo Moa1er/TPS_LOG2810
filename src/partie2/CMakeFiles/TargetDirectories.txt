@@ -1,0 +1,3 @@
+/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles/edit_cache.dir
+/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles/rebuild_cache.dir
+/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles/essaiTrieNode.dir
