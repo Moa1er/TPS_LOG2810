@@ -14,6 +14,8 @@ private:
     std::vector<Personne> personnes_;
     int nbPersonnes_;
 public:
+    Personnes() = default;
+    
     int findIndex(std::string nomPersonne);
     void addPersonne(Personne personne);
     void setNbPersonnes(int nbPersonnes){nbPersonnes_ = nbPersonnes;};

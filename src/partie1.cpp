@@ -14,11 +14,10 @@
 #include "../include/Graph.h"
 #include "../include/StringOperations.h"
 
-
 using namespace std;
 
 Graph graph = Graph();
-Personnes personnes;
+Personnes personnes = Personnes();
 
 void creerGrapheExposition(string nomFichierIndividus, string nomFichierContacts){
     ifstream fluxIndividus(nomFichierIndividus + ".txt");
@@ -34,7 +33,7 @@ void creerGrapheExposition(string nomFichierIndividus, string nomFichierContacts
     }
 
     cout << "Fichiers ouverts\n";
-
+    
     string ligne;
     Personne personne;
     char delimiteurIndividus = ',';
@@ -67,15 +66,13 @@ void creerGrapheExposition(string nomFichierIndividus, string nomFichierContacts
         distance = std::stod(v[1]);
         personneTo = v[2];
         
-        //On enleve les charactères invisibles de la fin du string
+        //On enleve les charactères invisibles de la fin du string sinon la comparaison
+        //entre string ne marche pas
         operationsObject.trimRight(personneTo);
 
-        int indexPersonneFrom(0);
-        int indexPersonneTo(0);
-
         //On cherche l'index de la personne
-        indexPersonneFrom = personnes.findIndex(personneFrom);
-        indexPersonneTo = personnes.findIndex(personneTo);
+        int indexPersonneFrom = personnes.findIndex(personneFrom);
+        int indexPersonneTo = personnes.findIndex(personneTo);
 
         graph.addEdge(indexPersonneFrom, indexPersonneTo, distance);
         graph.addEdge(indexPersonneTo, indexPersonneFrom, distance);
@@ -87,12 +84,9 @@ void afficherGrapheExposition(){
 }
 
 bool identifierExposition(string origine, string destination){
-    int indexPersonneFrom(0);
-    int indexPersonneTo(0);
-
     //On cherche l'index de la personne
-    indexPersonneFrom = personnes.findIndex(origine);
-    indexPersonneTo = personnes.findIndex(destination);
+    int indexPersonneFrom = personnes.findIndex(origine);
+    int indexPersonneTo = personnes.findIndex(destination);
 
     vector<double> djikstraOutput = graph.getDjikstraOut();
 
@@ -139,8 +133,8 @@ void partie1(){
         switch (valeurEntree)
         {
             case 'a':
-                cout << "Entree le nom du fichier regroupant les individus : ", cin >> nomFichierIndividus;
-                cout << "Entree le nom du fichier regroupant les contacts : ", cin >> nomFichierContacts;
+                cout << "Entree le nom du fichier regroupant les individus (sans le .txt): ", cin >> nomFichierIndividus;
+                cout << "Entree le nom du fichier regroupant les contacts (sans le .txt) : ", cin >> nomFichierContacts;
                 creerGrapheExposition(nomFichierIndividus, nomFichierContacts);
                 estAChoisie = true;
                 break;

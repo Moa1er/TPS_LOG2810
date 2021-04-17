@@ -15,7 +15,6 @@ private:
 
 public:
     Graph() = default;
-    ~Graph();
 
     void addEdge(int v1, int v2, double weight);
     std::vector<double> shortestPath(int startNode);

@@ -8,10 +8,6 @@ using namespace std;
 
 #define INF 1000000
 
-Graph::~Graph(){
-    delete adjecencyList_;
-}
-
 void Graph::setList(int nbVertices){
     adjecencyList_ = new list<pair<int, double>>[nbVertices];
 }
