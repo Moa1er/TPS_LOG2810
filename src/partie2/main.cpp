@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
     string name, type, id, line;
     fstream inventaire;
     Trie queryName, queryType, queryId;
-
+    
     inventaire.open("Lexique.txt", fstream::in); //read inventaire file into trie tree structure
 
     //TODO: do this for each attributes
@@ -42,10 +42,16 @@ int main(int argc, char const *argv[])
         return -1;
     }
     inventaire.close();
-    id.clear(); //clear string variable used for file input; string variable will read in user input
-    cout << "enter search query:" << endl;
-    cin >> id;
-    cout << "your search options are:  " << endl;
-    queryName.search(id);
+
+    string enteredLetter;
+    cout << "Enter search query (end the search by typing ';') : " << endl << "Mot : ";
+    while(true){
+        enteredLetter += cin.get();
+        if(enteredLetter[enteredLetter.size() - 1] == ';')
+            break;
+        cin.ignore(256, '\n');
+        queryName.search(enteredLetter);
+        cout << endl << "Mot : " << enteredLetter;
+    }
     return 0;
 }

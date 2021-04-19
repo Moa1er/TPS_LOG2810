@@ -123,33 +123,6 @@ essaiTrieNode/fast:
 	$(MAKE) -f CMakeFiles/essaiTrieNode.dir/build.make CMakeFiles/essaiTrieNode.dir/build
 .PHONY : essaiTrieNode/fast
 
-automate.o: automate.cpp.o
-
-.PHONY : automate.o
-
-# target to build an object file
-automate.cpp.o:
-	$(MAKE) -f CMakeFiles/essaiTrieNode.dir/build.make CMakeFiles/essaiTrieNode.dir/automate.cpp.o
-.PHONY : automate.cpp.o
-
-automate.i: automate.cpp.i
-
-.PHONY : automate.i
-
-# target to preprocess a source file
-automate.cpp.i:
-	$(MAKE) -f CMakeFiles/essaiTrieNode.dir/build.make CMakeFiles/essaiTrieNode.dir/automate.cpp.i
-.PHONY : automate.cpp.i
-
-automate.s: automate.cpp.s
-
-.PHONY : automate.s
-
-# target to generate assembly for a file
-automate.cpp.s:
-	$(MAKE) -f CMakeFiles/essaiTrieNode.dir/build.make CMakeFiles/essaiTrieNode.dir/automate.cpp.s
-.PHONY : automate.cpp.s
-
 items.o: items.cpp.o
 
 .PHONY : items.o
@@ -267,9 +240,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... essaiTrieNode"
-	@echo "... automate.o"
-	@echo "... automate.i"
-	@echo "... automate.s"
 	@echo "... items.o"
 	@echo "... items.i"
 	@echo "... items.s"

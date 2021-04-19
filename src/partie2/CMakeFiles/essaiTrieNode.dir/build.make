@@ -70,22 +70,9 @@ CMakeFiles/essaiTrieNode.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/essaiTrieNode.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Github/TPS_LOG2810/src/partie2/main.cpp -o CMakeFiles/essaiTrieNode.dir/main.cpp.s
 
-CMakeFiles/essaiTrieNode.dir/automate.cpp.o: CMakeFiles/essaiTrieNode.dir/flags.make
-CMakeFiles/essaiTrieNode.dir/automate.cpp.o: automate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/essaiTrieNode.dir/automate.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/essaiTrieNode.dir/automate.cpp.o -c /mnt/d/Github/TPS_LOG2810/src/partie2/automate.cpp
-
-CMakeFiles/essaiTrieNode.dir/automate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/essaiTrieNode.dir/automate.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Github/TPS_LOG2810/src/partie2/automate.cpp > CMakeFiles/essaiTrieNode.dir/automate.cpp.i
-
-CMakeFiles/essaiTrieNode.dir/automate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/essaiTrieNode.dir/automate.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Github/TPS_LOG2810/src/partie2/automate.cpp -o CMakeFiles/essaiTrieNode.dir/automate.cpp.s
-
 CMakeFiles/essaiTrieNode.dir/node.cpp.o: CMakeFiles/essaiTrieNode.dir/flags.make
 CMakeFiles/essaiTrieNode.dir/node.cpp.o: node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/essaiTrieNode.dir/node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/essaiTrieNode.dir/node.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/essaiTrieNode.dir/node.cpp.o -c /mnt/d/Github/TPS_LOG2810/src/partie2/node.cpp
 
 CMakeFiles/essaiTrieNode.dir/node.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/essaiTrieNode.dir/node.cpp.s: cmake_force
 
 CMakeFiles/essaiTrieNode.dir/trie.cpp.o: CMakeFiles/essaiTrieNode.dir/flags.make
 CMakeFiles/essaiTrieNode.dir/trie.cpp.o: trie.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/essaiTrieNode.dir/trie.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/essaiTrieNode.dir/trie.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/essaiTrieNode.dir/trie.cpp.o -c /mnt/d/Github/TPS_LOG2810/src/partie2/trie.cpp
 
 CMakeFiles/essaiTrieNode.dir/trie.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/essaiTrieNode.dir/trie.cpp.s: cmake_force
 
 CMakeFiles/essaiTrieNode.dir/items.cpp.o: CMakeFiles/essaiTrieNode.dir/flags.make
 CMakeFiles/essaiTrieNode.dir/items.cpp.o: items.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/essaiTrieNode.dir/items.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/essaiTrieNode.dir/items.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/essaiTrieNode.dir/items.cpp.o -c /mnt/d/Github/TPS_LOG2810/src/partie2/items.cpp
 
 CMakeFiles/essaiTrieNode.dir/items.cpp.i: cmake_force
@@ -125,7 +112,6 @@ CMakeFiles/essaiTrieNode.dir/items.cpp.s: cmake_force
 # Object files for target essaiTrieNode
 essaiTrieNode_OBJECTS = \
 "CMakeFiles/essaiTrieNode.dir/main.cpp.o" \
-"CMakeFiles/essaiTrieNode.dir/automate.cpp.o" \
 "CMakeFiles/essaiTrieNode.dir/node.cpp.o" \
 "CMakeFiles/essaiTrieNode.dir/trie.cpp.o" \
 "CMakeFiles/essaiTrieNode.dir/items.cpp.o"
@@ -134,13 +120,12 @@ essaiTrieNode_OBJECTS = \
 essaiTrieNode_EXTERNAL_OBJECTS =
 
 essaiTrieNode: CMakeFiles/essaiTrieNode.dir/main.cpp.o
-essaiTrieNode: CMakeFiles/essaiTrieNode.dir/automate.cpp.o
 essaiTrieNode: CMakeFiles/essaiTrieNode.dir/node.cpp.o
 essaiTrieNode: CMakeFiles/essaiTrieNode.dir/trie.cpp.o
 essaiTrieNode: CMakeFiles/essaiTrieNode.dir/items.cpp.o
 essaiTrieNode: CMakeFiles/essaiTrieNode.dir/build.make
 essaiTrieNode: CMakeFiles/essaiTrieNode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable essaiTrieNode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/Github/TPS_LOG2810/src/partie2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable essaiTrieNode"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/essaiTrieNode.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
