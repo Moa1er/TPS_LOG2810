@@ -13,12 +13,8 @@ StringOperations test;
 
 void creerAutomate(string nomFichierLexique){
     string name, type, id, line;
-    //fstream inventaire;
-
-    //inventaire.open("Lexique.txt", fstream::in); //read inventaire file into trie tree structure
     ifstream inventaire(nomFichierLexique + ".txt");
 
-    //TODO: do this for each attributes
     if (inventaire){
         while (getline(inventaire, line) && line != ""){
 
@@ -46,7 +42,7 @@ void creerAutomate(string nomFichierLexique){
 
 void saisirMot(){
     string enteredLetter;
-    cout << "Enter search query (end the search by typing ';') : " << endl << "Mot : ";
+    cout << "Entrez votre recherche (finissez la recherche en tapant ';') : " << endl << "Mot : ";
     cin.ignore();
     while(true){
         enteredLetter += cin.get();
