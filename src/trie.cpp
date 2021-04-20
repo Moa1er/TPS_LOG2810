@@ -4,8 +4,8 @@ Mohamed Fenjiro <mohamed.fenjiro@polymtl.ca>
 
 //trie.cpp
 
-#include "trie.hpp"
-#include "node.hpp"
+#include "../include/trie.h"
+#include "../include/node.h"
 
 //TODO: insert attributes in child node (item) after each insertion/read
 

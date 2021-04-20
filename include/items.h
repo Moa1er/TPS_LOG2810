@@ -2,7 +2,7 @@
 Mohamed Fenjiro <mohamed.fenjiro@polymtl.ca>
  ******************************************/
 
-#include "node.hpp"
+#include "node.h"
 
 class Items : public Node{
 public:

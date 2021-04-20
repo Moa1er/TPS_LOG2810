@@ -7,7 +7,7 @@ Mohamed Fenjiro <mohamed.fenjiro@polymtl.ca>
 #ifndef TRIE_H
 #define TRIE_H
 
-#include "node.hpp"
+#include "node.h"
 
 using namespace std;
 

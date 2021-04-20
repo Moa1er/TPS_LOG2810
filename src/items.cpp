@@ -1,7 +1,7 @@
 /******************************************
 Mohamed Fenjiro <mohamed.fenjiro@polymtl.ca>
  ******************************************/
-#include "items.hpp"
+#include "../include/items.h"
 
 void Items::setName(char name)
 {

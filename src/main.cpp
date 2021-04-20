@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <fstream>
 
 #include "../include/partie1.h"
 #include "../include/partie2.h"
@@ -30,6 +29,5 @@ int main(){
                 break;
         }
     }
-
     cout << "\nFIN DU PROGRAMME !\n";   
 }

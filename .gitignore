@@ -20,3 +20,6 @@ github
 
 #Ignore les nohup.out
 nohup.out
+
+#Ignore .vscode folder
+.vscode/

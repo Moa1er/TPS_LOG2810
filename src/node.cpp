@@ -4,7 +4,7 @@ Mohamed Fenjiro <mohamed.fenjiro@polymtl.ca>
 
 //node.cpp
 
-#include "node.hpp"
+#include "../include/node.h"
 
 Node::Node() //Node constructor
 {
