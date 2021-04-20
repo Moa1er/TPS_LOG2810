@@ -128,13 +128,13 @@ void partie1(){
     
     while(!estDChoisie){
         cout << "\n(a) Créer le graphe d’exposition.\n(b) Afficher le graphe d’exposition.\n(c) Afficher notification COVID\n(d) Quitter\n";
-        cout << "Entree l'option voulue ( a, b, c, d ) : ", cin >> valeurEntree;
+        cout << "Entrez l'option voulue ( a, b, c, d ) : ", cin >> valeurEntree;
 
         switch (valeurEntree)
         {
             case 'a':
-                cout << "Entree le nom du fichier regroupant les individus (sans le .txt): ", cin >> nomFichierIndividus;
-                cout << "Entree le nom du fichier regroupant les contacts (sans le .txt) : ", cin >> nomFichierContacts;
+                cout << "Entrez le nom du fichier regroupant les individus (sans le .txt): ", cin >> nomFichierIndividus;
+                cout << "Entrez le nom du fichier regroupant les contacts (sans le .txt) : ", cin >> nomFichierContacts;
                 creerGrapheExposition(nomFichierIndividus, nomFichierContacts);
                 estAChoisie = true;
                 break;
@@ -146,7 +146,7 @@ void partie1(){
                 break;
             case 'c':
                 if(estAChoisie){
-                    cout << "Entree le nom de la personne à vérifier : ", cin >> nomPersonne;
+                    cout << "Entrez le nom de la personne à vérifier : ", cin >> nomPersonne;
                     notifierExposition(nomPersonne);
                 }
                 else

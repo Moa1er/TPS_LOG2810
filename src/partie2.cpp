@@ -16,7 +16,7 @@ void creerAutomate(string nomFichierLexique){
     //fstream inventaire;
 
     //inventaire.open("Lexique.txt", fstream::in); //read inventaire file into trie tree structure
-    ifstream inventaire("Lexique.txt");
+    ifstream inventaire(nomFichierLexique + ".txt");
 
     //TODO: do this for each attributes
     if (inventaire){
@@ -36,7 +36,7 @@ void creerAutomate(string nomFichierLexique){
         }
     }
     else{
-        cout << "error:  file not open." << endl;
+        cout << "Erreur : fichier non-ouvert." << endl;
         return;
     }
     inventaire.close();
@@ -69,12 +69,13 @@ void partie2(){
     
     while(!estGChoisie){
         cout << "\n(d) Créer automate.\n(e) Saisir mot.\n(f) Afficher statistiques.\n(g) Quitter\n";
-        cout << "Entree l'option voulue ( d, e, f, g ) : ", cin >> valeurEntree;
+        cout << "Entrez l'option voulue ( d, e, f, g ) : ", cin >> valeurEntree;
 
         switch (valeurEntree)
         {
             case 'd':
-                creerAutomate("Lexique.txt");
+                cout << "Entrez le nom du fichier lexique (sans le .txt): ", cin >> nomFichierLexique;
+                creerAutomate(nomFichierLexique);
                 estDChoisie = true;
                 break;
             case 'e':

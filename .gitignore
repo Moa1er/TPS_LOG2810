@@ -1,4 +1,3 @@
-github
 #Ignore all trash files
 
 #NOTACTIVATED - Ignore Librairies
@@ -23,3 +22,6 @@ nohup.out
 
 #Ignore .vscode folder
 .vscode/
+
+#ignore programme file
+programme
