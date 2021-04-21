@@ -23,6 +23,7 @@ public:
     void search(string data); //wrapper for main auto-completion method; advances to last char in user's prefix
     void print_tree(Node* root, string data, string str); //prints suggested queries
     void print_tree(Node* root, string str); //overloaded print_tree method used for recursion
+    void print_satistics();
 };
 
 #endif

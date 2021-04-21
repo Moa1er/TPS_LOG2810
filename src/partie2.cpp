@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Trie queryName, queryType, queryId;
+Trie queryName;
 StringOperations test;
 
 void creerAutomate(string nomFichierLexique){
@@ -82,7 +82,8 @@ void partie2(){
                 break;
             case 'f':
                 if(estDChoisie){
-                    //AFFICHER STATISTIQUES
+                    cout << "Voice les mots avec leur utilisation" << endl;
+                    queryName.print_satistics();
                 }
                 else
                     cout << endl << "Il faut d'abord choisir l'option d pour creer l'automate !" << endl;

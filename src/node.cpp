@@ -12,6 +12,7 @@ Node::Node() //Node constructor
     this->setWord(false);
     for (int i = 0; i < 128; i++)
         this->child[i] = nullptr;
+    this->usage = 0;
 }
 
 void Node::setWord(bool endOfWord)
@@ -32,4 +33,9 @@ void Node::setChar(char character)
 char Node::getChar() const
 {
     return this->character;
+}
+
+void Node::usageIncrement()
+{
+    this->usage++;
 }

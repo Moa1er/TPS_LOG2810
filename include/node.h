@@ -15,6 +15,7 @@ class Node //node used to hold data in trie tree structure
     friend class Trie;
 private:
     char character;
+    int recent, usage;
     bool endOfWord; //true = marks end of word
     Node* child[128]; //points to next node; each pointer for each char in ASCII table (0-127)
 public:
@@ -24,6 +25,7 @@ public:
     bool isWord();
     void setChar(char character);
     char getChar() const;
+    void usageIncrement();
 };
 
 #endif

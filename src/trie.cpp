@@ -61,6 +61,7 @@ void Trie::print_tree(Node* root, string str) //overloaded function for recursiv
             str += adv->getChar();
             if (adv->isWord())
             {
+                adv->usageIncrement();
                 cout << str << endl;
             }
             print_tree(adv, str);
@@ -83,7 +84,9 @@ void Trie::search(string data) //wrapper for function that completes the prefix,
             return;
         }
         else
+        {
             tmp = tmp->child[static_cast<int>(cstr[i])];
+        }
         if (tmp->getChar() != cstr[i]) //lets user know if prefix not in dictionary (char does not match corresponding char in prefix)
         {
             cout << "error:  string not found" << endl;
@@ -92,4 +95,16 @@ void Trie::search(string data) //wrapper for function that completes the prefix,
     }
     string str = data; //copy user's query prefix into generic string used for appending operations to complete query prefix in print_tree method
     print_tree(tmp, data, str);	//passes pointer that has advanced to last char in query prefix to printing method
+}
+
+void Trie::print_satistics(){
+    for (int i = 0; i < 128; i++)
+    {
+        Node* adv = root;
+        if (adv->child[i] != NULL)
+        {
+            cout << "Le mot" << adv->getChar() << "a ete affiche" << adv->usage << "fois." << endl;
+            adv = adv->child[i];
+        }
+    }
 }
